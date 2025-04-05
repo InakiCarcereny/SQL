@@ -1,0 +1,1 @@
+SELECT * FROM userse WHERE first_name IN ('inaki', 'iñaki');
