@@ -1,0 +1,14 @@
+ALTER TABLE users
+ADD username VARCHAR(50) NOT NULL UNIQUE
+
+ALTER TABLE users
+RENAME COLUMN username TO user_name
+
+ALTER TABLE users
+MODIFY COLUMN user_name VARCHAR(100)
+
+ALTER TABLE users
+ADD description VARCHAR(255) NOT NULL
+
+ALTER TABLE users
+DROP COLUMN description
