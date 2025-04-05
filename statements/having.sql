@@ -1,0 +1,5 @@
+SELECT * FROM users GROUP BY age HAVING COUNT(age) > 1;
+
+SELECT COUNT(age) FROM users GROUP BY age HAVING COUNT(age) > 2;
+
+SELECT COUNT(age) FROM users HAVING COUNT(age) > 4;
